@@ -1,19 +1,25 @@
-import {Container,Menu,Button,Image} from 'semantic-ui-react'
-  
+import {Container,Menu,Button,Dropdown } from 'semantic-ui-react'
+const options = [
+  { key: 1, text: 'العربية', value: 1 },
+  { key: 2, text: 'English', value: 2 },
+]
 export default ()=>{
-    return (<div>                 
+    return (<div>        
+        {/* <Image size='mini' src='/images/logo.svg' style={{ marginLeft: '12.0em',paddingTop:'2.0em' }} />              */}
         <Container style={{paddingTop:20}} >
                 <Menu>  
         <Container>
           <Menu.Item as="h2" header>
-          <Image size='mini' src='/logo.png' style={{ marginRight: '1.2em' }} />    
+            Home
           </Menu.Item>
         </Container>
         <Container>
           <Menu.Menu position="right">
             <Menu.Item name="logout">
             <Button  size='tiny' color='blue'>Login</Button>
-            <Button  size='tiny' color='blue' >Register</Button>
+            <Menu compact>
+               <Dropdown text='Language' options={options} simple item />
+            </Menu>
             </Menu.Item>
           </Menu.Menu>   
     </Container>  
