@@ -1,4 +1,4 @@
-import { Button, Form, Grid, Header, Image, Message, Segment } from 'semantic-ui-react';
+import { Button, Form, Grid, Header, Segment } from 'semantic-ui-react';
 
 
 export default ()=>{
@@ -17,7 +17,6 @@ export default ()=>{
             placeholder='Password'
             type='password'
           />
-
           <Button color='blue' fluid size='large'>
             Sign in
           </Button>
