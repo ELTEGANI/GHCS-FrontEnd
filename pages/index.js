@@ -1,13 +1,11 @@
 import {Container,Tab,Menu,Button} from 'semantic-ui-react';
 const panes = [
+    { menuItem: 'Human Resources', render: () => <Tab.Pane>Coming Soon</Tab.Pane> },
     { menuItem: 'Human Resources', render: () => <Tab.Pane></Tab.Pane> },
     { menuItem: 'Human Resources', render: () => <Tab.Pane></Tab.Pane> },
     { menuItem: 'Human Resources', render: () => <Tab.Pane></Tab.Pane> },
     { menuItem: 'Human Resources', render: () => <Tab.Pane></Tab.Pane> },
     { menuItem: 'Human Resources', render: () => <Tab.Pane></Tab.Pane> },
-    { menuItem: 'Human Resources', render: () => <Tab.Pane></Tab.Pane> },
-    { menuItem: 'Human Resources', render: () => <Tab.Pane></Tab.Pane> },
-    { menuItem: 'Human Resources', render: () => <Tab.Pane></Tab.Pane> }
 
   ]
 export default ()=>{
