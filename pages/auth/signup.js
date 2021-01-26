@@ -1,6 +1,11 @@
 import { Button, Form, Grid, Header, Segment } from 'semantic-ui-react';
+import {usestate} from 'react';
 
 export default ()=>{
+  
+  const [email,setEmail]       = usestate('');
+  const [password,setPassword] = usestate('');
+
     return  <Grid textAlign='center' style={{ height: '100vh' }} verticalAlign='middle'>
     <Grid.Column style={{ maxWidth: 450 }}>
       <Header as='h2' color='blue' textAlign='center'>

@@ -20,9 +20,8 @@ export default ()=>{
         <Container>
           <Menu.Menu position="right">
             <Menu.Item name="logout">
-            <Button  size='tiny' color='blue'>Signin</Button>
-            <Button  size='tiny' color='blue'>Register</Button>
-
+            <Button  size='small' color='blue'>Signin</Button>
+            <Button  size='small' color='red'>Admin Portal</Button>
             <Menu compact>
                <Dropdown text='Language' options={options} simple item />
             </Menu>
