@@ -1,4 +1,4 @@
-import {Container,Menu,Button,Dropdown,Image} from 'semantic-ui-react'
+import {Container,Menu,Button,Dropdown} from 'semantic-ui-react'
 import Logo from '../images/logo.svg';
 
 const options = [
@@ -7,20 +7,22 @@ const options = [
 ]
 export default ()=>{
     return (<div>        
- <div style={{marginLeft: '6.0em',marginTop:'2.0em'}}>
+ <div style={{marginLeft: '7.0em',marginTop:'-50.0px'}}>
     <Logo />
   </div>                   
         <Container style={{paddingTop:20}} >
                 <Menu>  
         <Container>
-          <Menu.Item as="h2" header>
+          <Menu.Item as="h3" header>
             Home
           </Menu.Item>
         </Container>
         <Container>
           <Menu.Menu position="right">
             <Menu.Item name="logout">
-            <Button  size='tiny' color='blue'>Login</Button>
+            <Button  size='tiny' color='blue'>Signin</Button>
+            <Button  size='tiny' color='blue'>Register</Button>
+
             <Menu compact>
                <Dropdown text='Language' options={options} simple item />
             </Menu>
