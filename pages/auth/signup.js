@@ -1,6 +1,5 @@
 import { Button, Form, Grid, Header, Segment } from 'semantic-ui-react';
 
-
 export default ()=>{
     return  <Grid textAlign='center' style={{ height: '100vh' }} verticalAlign='middle'>
     <Grid.Column style={{ maxWidth: 450 }}>
